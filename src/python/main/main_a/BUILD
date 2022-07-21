@@ -8,6 +8,6 @@ pex_binary(
     shebang="/usr/bin/env python3.8"
 )
 
-python_sources(name="lib", dependencies=["src/python/lib"])
+python_sources(name="lib", dependencies=["src/python/lib/lib_a"])
 
 docker_image(name="docker", dependencies=["src/python/main:main"])

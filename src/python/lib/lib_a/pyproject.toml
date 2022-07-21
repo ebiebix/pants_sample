@@ -6,6 +6,7 @@ authors = ["ebiebix <ebi.h.821@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "3.8.12"
+absl-py = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 

@@ -7,8 +7,11 @@ backend_packages.add = [
 ]
 
 [python]
-enable_resolves = false
+enable_resolves = true
 interpreter_constraints = ["CPython==3.8.*"]
+
+[python.resolves]
+python-default = "thirdparty/python_default_lockfile.txt"
 
 [source]
 root_patterns = ["src/python"]

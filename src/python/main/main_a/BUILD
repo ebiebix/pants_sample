@@ -4,10 +4,15 @@ pex_binary(
     dependencies=[
         ":lib",
     ],
-    platforms=["linux-x86_64-cp-38-cp38"],
+    complete_platforms=[
+        "src/python/pantsbuild/complete_platforms:python_38_slim_buster"
+    ],
     shebang="/usr/bin/env python3.8"
 )
 
-python_sources(name="lib", dependencies=["src/python/lib/lib_a"])
+python_sources(
+    name="lib",
+    dependencies=["src/python/lib/lib_a"],
+    )
 
 docker_image(name="image", dependencies=[":main"])

@@ -10,6 +10,9 @@ backend_packages.add = [
 enable_resolves = false
 interpreter_constraints = ["CPython==3.8.*"]
 
+[python-repos]
+repos = ["%(buildroot)s/thirdparty/python/wheels/"]
+
 [python.resolves]
 python-default = "thirdparty/python_default_lockfile.txt"
 

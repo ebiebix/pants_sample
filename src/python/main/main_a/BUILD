@@ -10,4 +10,4 @@ pex_binary(
 
 python_sources(name="lib", dependencies=["src/python/lib/lib_a"])
 
-docker_image(name="docker", dependencies=["src/python/main:main"])
+docker_image(name="image", dependencies=[":main"])

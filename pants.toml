@@ -1,15 +1,13 @@
 [GLOBAL]
-pants_version = "2.10.0"
-use_deprecated_python_macros = false
+pants_version = "2.12.0"
 
 backend_packages.add = [
   "pants.backend.docker",
   "pants.backend.python",
-  "pants.backend.python.typecheck.mypy"
 ]
 
 [python]
-enable_resolves = true
+enable_resolves = false
 interpreter_constraints = ["CPython==3.8.*"]
 
 [python.resolves]

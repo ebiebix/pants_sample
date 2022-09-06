@@ -1,5 +1,7 @@
 poetry_requirements(name="poetry")
 
 python_sources(
-    sources=["**/*.py"]
+    sources=["**/*.py"],
+    dependencies=[
+    ],
 )

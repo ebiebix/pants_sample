@@ -2,7 +2,8 @@ from lib.lib_a.sample import sample
 from lib.lib_a.array import (
     get_zero_array,
     get_zero_tf_array,
-    get_zero_torch_array
+    get_zero_torch_array,
+    get_test
 )
 
 if __name__ == "__main__":
@@ -14,3 +15,4 @@ if __name__ == "__main__":
     print(zero_np)
     print(zero_tf)
     print(zero_torch)
+    print(get_test("hello"))

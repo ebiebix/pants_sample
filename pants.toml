@@ -18,7 +18,7 @@ repos = ["%(buildroot)s/thirdparty/python/wheels/"]
 python-default = "thirdparty/python_default_lockfile.txt"
 
 [source]
-root_patterns = ["src/python"]
+root_patterns = ["src/python", "src/proto"]
 
 
 [anonymous-telemetry]

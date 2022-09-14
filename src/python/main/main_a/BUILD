@@ -12,7 +12,7 @@ pex_binary(
 
 python_sources(
     name="lib",
-    dependencies=["src/python/lib/lib_a"],
+    dependencies=["src/python/lib/lib_a", "src/proto:test_proto"],
     )
 
 docker_image(name="image", dependencies=[":main"])
